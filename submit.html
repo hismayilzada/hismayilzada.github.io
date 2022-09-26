@@ -1,43 +1,78 @@
-<! DOCTYPE html>
-<html>
-    <head>
-    <title>Write me a message</title>
-      <link rel="stylesheet" href="personal.css">
-      <link rel ="icon" href="C:/Users/dellc/Downloads/favicon.ico">
-</head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <body>
-    <table>
-    <caption>INFORMATION</caption>
-    <tr>
-        <th>Name</th>
-        <th>Surname</th>
-        <th>Contact Information</th>
-    </tr>
-    <tr>
-        <td>Humay</td>
-        <td>Ismayilzada</td>
-        <td><a href="mailto:hismayilzada12387@ada.edu.az">hismayilzada12387@ada.edu.az</a></td>
-    </tr>
-</table>
-<br>
+h1 {
+    color: magenta;
+    text-align: center;
+    font-family: Verdana;
+    letter-spacing: 20px;
+    
+}
 
+h2{
+    color:rgb(0, 238, 255);
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
 
-<form action="mailto: hismayilzada12387@ada.edu.az" method="POST">
-<fieldset>
-    <legend>SEND ME A MESSAGE.
-    </legend><label for="subject">Subject:</label> <br>
-<input type="text" name="subject" placeholder="subject" required=""> <br>
-<label for="mail">Email:</label> <br>
-<input type="email" name="mail" placeholder="email" required="">
-<br>
-<label for="message">Message:</label> <br>
-<input type="message" name="message" placeholder="message" required="">
-<br>
-<button>Urek Sozlerini gonder!</button>
-</fieldset>
+button {
+    text-align: center;
+    transition: all 0.5s;
+    padding: 1em 1em;
+    background-color: whitesmoke;
+    border-color:white;
+    border-style: solid;
+    /*transition:margin-left 2s;*/
+    
+}
+body{
+    background: url("") repeat;
+    background-color:whitesmoke;
+    
+}
 
-</form>
+p{
+    color: brown;
+}
 
-    </body>
-</html>
+button:hover {
+    background-color:whitesmoke;
+    border-color: brown;
+    box-shadow: 0 0.5em 0.5em -0.4em brown;
+    color:grey;
+    cursor:pointer;
+    transform: translateY(-0.5em);
+    /*border-radius: 30%;
+    margin-left:300px;*/
+}
+/*button:active {
+    background-color:black;
+    color:red;
+}*/
+
+section button{
+    top:150px;
+    left:200px;
+    width: 100px;
+}
+#sign{
+    position:sticky;
+    top:150px;
+}
+
+table{
+    background-color: gray;
+    border-collapse: collapse;
+    height: 100px;
+    width: 500px;
+
+}
+th{
+    background-color: rgb(226, 222, 222);
+    border-color: gray;
+    border-style: inset;
+    color: rgb(99, 23, 23);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+td{
+    background-color: whitesmoke;
+    color:gray;
+    text-align: center;
+}
