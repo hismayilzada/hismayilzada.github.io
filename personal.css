@@ -56,3 +56,23 @@ section button{
     position:sticky;
     top:150px;
 }
+
+table{
+    background-color: gray;
+    border-collapse: collapse;
+    height: 100px;
+    width: 500px;
+
+}
+th{
+    background-color: rgb(226, 222, 222);
+    border-color: gray;
+    border-style: inset;
+    color: rgb(99, 23, 23);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+td{
+    background-color: whitesmoke;
+    color:gray;
+    text-align: center;
+}
