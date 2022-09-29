@@ -12,6 +12,14 @@ h2{
     font-family:'Courier New', Courier, monospace;
 }
 
+h3{
+    color:rgb(0, 238, 255);
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+ul, li{
+    text-align:center;
+}
 button {
     text-align: center;
     transition: all 0.5s;
@@ -25,6 +33,9 @@ button {
 body{
     background: url("") repeat;
     background-color:whitesmoke;
+    padding: 30px 100px;
+    border-color:rgb(82, 13, 13);
+    border-style:double;
     
 }
 
@@ -80,15 +91,23 @@ a:link {
     color: green;
   }
   
+  /* visited link */
   a:visited {
     color: gray;
   }
-
+  
+  /* mouse over link */
   a:hover {
     color: hotpink;
     font-size: 20px;
   }
-
+  
+  /* selected link */
   a:active {
     color: blue;
+  }
+  
+  img {
+    margin-left: 400px;
+    border-radius: 30px;
   }
