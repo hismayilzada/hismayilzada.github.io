@@ -36,6 +36,16 @@ button {
     /*transition:margin-left 2s;*/
     
 }
+button.b1{
+    margin: -4.65em 13em;
+}
+button.b2{
+    margin: -5.8em 31em;
+}
+button.b3{
+    margin: -6.9em 51em;
+    
+}
 body{
     background: url("") repeat;
     background-color:whitesmoke;
@@ -105,7 +115,7 @@ a.a1 a.a2 a.a3 {
   /* mouse over link */
   a:hover {
     color: hotpink;
-    font-size: 20px;
+    font-size: 15px;
   }
   
   /* selected link */
