@@ -1,5 +1,7 @@
 body{
     background: url("s.png");
+    max-width: auto;
+    max-height: auto;
 }
 
 h1{
@@ -34,6 +36,8 @@ button.p{
     color:rgba(255, 255, 255, 0.801);
     font-weight:bold;
     display:block;
+    max-width: 1000px;
+    max-height: 2000px;
 }
 button.d{
     text-align:center;
@@ -46,12 +50,16 @@ button.d{
     color:rgba(255, 255, 255, 0.801);
     font-weight:bold;
     display:block;
+    max-width: auto;
+    max-height: auto;
 }
 footer{
-    padding-top:195px;
+    padding-top:200px;
     padding-left: 450px;
     color:rgb(226, 216, 216);
     display:block;
+    max-width:auto;
+    max-height:auto;
 }
 a{
     color:rgb(226, 216, 216);
