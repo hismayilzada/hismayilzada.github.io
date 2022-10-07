@@ -20,7 +20,8 @@ h2{
     width:auto;
     font-size: 40px;
     padding-top: 0px;
-    margin-top:-10px;
+    margin-top:0px;
+    display:block;
 }
 button.p{
     text-align:center;
@@ -32,7 +33,7 @@ button.p{
     margin-top: -30px;
     color:rgba(255, 255, 255, 0.801);
     font-weight:bold;
-
+    display:block;
 }
 button.d{
     text-align:center;
@@ -44,11 +45,13 @@ button.d{
     margin-top: -75px;
     color:rgba(255, 255, 255, 0.801);
     font-weight:bold;
+    display:block;
 }
 footer{
-    padding-top:170px;
+    padding-top:210px;
     padding-left: 450px;
     color:rgb(226, 216, 216);
+    display:block;
 }
 a{
     color:rgb(226, 216, 216);
