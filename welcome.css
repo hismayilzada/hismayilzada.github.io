@@ -11,8 +11,9 @@ h1{
     height: 100;
     width:auto;
     font-family:'Times New Roman', Times, serif;
-    font-size: 40px;
+    font-size: 3.5vw;
     padding-top: 30px;
+    text-shadow: 1.5px 1.5px white;
 }
 h2{
     text-align:center;
@@ -24,6 +25,7 @@ h2{
     padding-top: 0px;
     margin-top:0px;
     display:block;
+    text-shadow: 2px 2px darkblue;
 }
 button.p{
     text-align:center;
@@ -38,6 +40,7 @@ button.p{
     display:block;
     max-width: 1000px;
     max-height: 2000px;
+    text-shadow: 1.5px 1.5px black;
 }
 button.d{
     text-align:center;
@@ -52,6 +55,7 @@ button.d{
     display:block;
     max-width: auto;
     max-height: auto;
+    text-shadow: 1.5px 1.5px black;
 }
 footer{
     padding-top:200px;
