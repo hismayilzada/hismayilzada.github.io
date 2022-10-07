@@ -21,35 +21,35 @@ h2{
     font-weight: 1500;
     height: 100;
     width:auto;
-    font-size: 40px;
+    font-size: 3vw;
     padding-top: 0px;
     margin-top:0px;
     display:block;
     text-shadow: 2px 2px darkblue;
+    
 }
 button.p{
     text-align:center;
     background: rgba(255, 255, 255, 0.2);
     align-items:center;
-    border-radius: 60px;
-    padding: 20px;
-    margin-left: 480px;
-    margin-top: -30px;
+    border-radius: 60vw;
+    padding: 1.5vw;
+    margin-left: 35vw;
+    margin-top: -3vw;
     color:rgba(255, 255, 255, 0.801);
     font-weight:bold;
     display:block;
-    max-width: 1000px;
-    max-height: 2000px;
+
     text-shadow: 1.5px 1.5px black;
 }
 button.d{
     text-align:center;
     background: rgba(255, 255, 255, 0.2);
     align-items:center;
-    border-radius: 60px;
-    padding: 20px;
-    margin-left: 700px;
-    margin-top: -75px;
+    border-radius: 60vw;
+    padding: 1.5vw;
+    margin-left: 53vw;
+    margin-top: -5.6vw;
     color:rgba(255, 255, 255, 0.801);
     font-weight:bold;
     display:block;
