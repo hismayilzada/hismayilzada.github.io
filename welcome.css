@@ -28,34 +28,39 @@ h2{
     text-shadow: 2px 2px darkblue;
     
 }
-button.p{
+a.c{
     text-align:center;
     background: rgba(255, 255, 255, 0.2);
     align-items:center;
-    border-radius: 60vw;
-    padding: 1.5vw;
-    margin-left: 35vw;
-    margin-top: -3vw;
+    border-radius: 60px;
+    padding: 20px;
+    margin-left: 460px;
     color:rgba(255, 255, 255, 0.801);
     font-weight:bold;
-    display:block;
-
+    text-decoration: none;
+    outline: black solid 2px;
     text-shadow: 1.5px 1.5px black;
 }
-button.d{
+a.c:hover{
+    background-color: black;
+    color:white;
+}
+a.d{
     text-align:center;
     background: rgba(255, 255, 255, 0.2);
     align-items:center;
-    border-radius: 60vw;
-    padding: 1.5vw;
-    margin-left: 53vw;
-    margin-top: -5.6vw;
+    border-radius: 60px;
+    padding: 20px;
+    margin-left: 75px;
     color:rgba(255, 255, 255, 0.801);
     font-weight:bold;
-    display:block;
-    max-width: auto;
-    max-height: auto;
+    text-decoration: none;
+    outline: black solid 2px;
     text-shadow: 1.5px 1.5px black;
+}
+a.d:hover{
+    background-color: black;
+    color:white;
 }
 footer{
     padding-top:200px;
