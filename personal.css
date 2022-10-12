@@ -1,0 +1,213 @@
+h1 {
+    color: magenta;
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+    letter-spacing: 20px;
+    
+}
+
+h2{
+    color:rgb(0, 238, 255);
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+h3{
+    color:rgb(0, 238, 255);
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+ul{
+    width:30%;
+    margin: 20px auto;
+}
+
+ul, li{
+    text-align:center;
+}
+button.submit {
+    margin-left: 200px;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-color:white;
+    border-style: solid;
+    size: 50px;
+    display: inline-block;
+}
+button.write {
+    text-align: center;
+    transition: all 0.5s;
+    padding: 1em 1em;
+    background-color: whitesmoke;
+    border-color:white;
+    border-style: solid;
+    margin-left: -7%;
+    width: 14.3%;
+    /*transition:margin-left 2s;*/
+    
+}
+button.b1{
+    margin: -4.65em 13em;
+    width:21%;
+    margin-left: 8%;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 1em 1em;
+    background-color: whitesmoke;
+    border-color:white;
+    border-style: solid;
+}
+button.b2{
+    margin: -5.8em 31em;
+    width: 19%;
+    margin-left: 29.7%;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 1em 1em;
+    background-color: whitesmoke;
+    border-color:white;
+    border-style: solid;
+}
+button.b3{
+    margin-top:-93.5px;
+    margin-left: 49.4%;
+    width: 23%;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 1em 1em;
+    background-color: whitesmoke;
+    border-color:white;
+    border-style: solid;
+}
+button.gal{
+    margin-left: 73.1%;
+    margin-top:-109.5px;
+    width: 10%;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 1em 1em;
+    background-color: whitesmoke;
+    border-color:white;
+    border-style: solid;
+}
+button.card{
+    margin-top:-13.25%;
+    margin-left: 83.9%;
+    width: 11%;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 1em 1em;
+    background-color: whitesmoke;
+    border-color:white;
+    border-style: solid;
+}
+button.git{
+    margin-left: 95.65%;
+    margin-top:-14.77%;
+    width: 10%;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 1em 1em;
+    background-color: whitesmoke;
+    border-color:white;
+    border-style: solid;
+}
+button.home{
+    margin-left: 45%;
+    margin-top:-9%;
+    width: 10%;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 1em 1em;
+    background-color: whitesmoke;
+    border-color:white;
+    border-style: solid;
+}
+body{
+    background: url("") repeat;
+    background-color:whitesmoke;
+    padding: 30px 100px;
+    border-color:rgb(82, 13, 13);
+    border-style:double;
+    
+}
+
+p{
+    color: brown;
+}
+
+button:hover {
+    background-color:whitesmoke;
+    border-color: brown;
+    box-shadow: 0 0.5em 0.5em -0.4em brown;
+    color:grey;
+    cursor:pointer;
+    transform: translateY(-0.5em);
+    /*border-radius: 30%;
+    margin-left:300px;*/
+}
+/*button:active {
+    background-color:black;
+    color:red;
+}*/
+
+section button{
+    top:150px;
+    left:200px;
+    width: 100px;
+}
+#sign{
+    position:static;
+    top:150px;
+}
+
+table{
+    background-color: gray;
+    border-collapse: collapse;
+    height: 20%;
+    width: 60%;
+
+}
+th{
+    background-color: rgb(226, 222, 222);
+    border-color: gray;
+    border-style: inset;
+    color: rgb(99, 23, 23);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+td{
+    background-color: whitesmoke;
+    color:gray;
+    text-align: center;
+}
+a.a1 a.a2 a.a3 {
+    color: green;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: gray;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+    font-size: 15px;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+  
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: -3%;
+    border-radius: 5%;
+  }
+ 
