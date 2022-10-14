@@ -104,3 +104,21 @@ footer{
 a{
     color:rgb(226, 216, 216);
 }
+@media (max-width: 768px) {
+    .c{
+        width:30px;
+        margin-left: -420px;
+        margin-bottom:50px;
+        align-items: center;
+        display:block;
+    }
+}
+@media (max-width: 768px) {
+    .d{
+        width:20px;
+        margin-right: -400px;
+        margin-bottom:50px;
+        align-items: center;
+        display:block;
+    }
+}
