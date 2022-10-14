@@ -18,113 +18,38 @@ h3{
     font-family:'Courier New', Courier, monospace;
 }
 
-ul{
-    width:30%;
-    margin: 20px auto;
-}
-
-ul, li{
-    text-align:center;
-}
-button.submit {
-    margin-left: 200px;
-    text-align: center;
-    transition: all 0.5s;
-    padding: 20px;
-    background-color: whitesmoke;
-    border-color:white;
-    border-style: solid;
-    size: 50px;
-    display: inline-block;
-}
-button.write {
-    text-align: center;
-    transition: all 0.5s;
-    padding: 1em 1em;
-    background-color: whitesmoke;
-    border-color:white;
-    border-style: solid;
-    margin-left: -7%;
-    width: 14.3%;
-    /*transition:margin-left 2s;*/
-    
-}
 button.b1{
-    margin: -4.65em 13em;
+    margin: auto;
     width:21%;
-    margin-left: 8%;
     text-align: center;
     transition: all 0.5s;
     padding: 1em 1em;
     background-color: whitesmoke;
-    border-color:white;
-    border-style: solid;
+    align-items: center;
+    display:block;
+    border: none;
 }
 button.b2{
-    margin: -5.8em 31em;
+    margin:auto;
     width: 19%;
-    margin-left: 29.7%;
     text-align: center;
     transition: all 0.5s;
     padding: 1em 1em;
     background-color: whitesmoke;
-    border-color:white;
-    border-style: solid;
+    align-items: center;
+    display:block;
+    border: none;
 }
 button.b3{
-    margin-top:-93.5px;
-    margin-left: 49.4%;
+    margin: auto;
     width: 23%;
     text-align: center;
     transition: all 0.5s;
     padding: 1em 1em;
     background-color: whitesmoke;
-    border-color:white;
-    border-style: solid;
-}
-button.gal{
-    margin-left: 73.1%;
-    margin-top:-109.5px;
-    width: 10%;
-    text-align: center;
-    transition: all 0.5s;
-    padding: 1em 1em;
-    background-color: whitesmoke;
-    border-color:white;
-    border-style: solid;
-}
-button.card{
-    margin-top:-13.25%;
-    margin-left: 83.9%;
-    width: 11%;
-    text-align: center;
-    transition: all 0.5s;
-    padding: 1em 1em;
-    background-color: whitesmoke;
-    border-color:white;
-    border-style: solid;
-}
-button.git{
-    margin-left: 95.65%;
-    margin-top:-14.77%;
-    width: 10%;
-    text-align: center;
-    transition: all 0.5s;
-    padding: 1em 1em;
-    background-color: whitesmoke;
-    border-color:white;
-    border-style: solid;
-}
-button.home{
-    margin-left: 45%;
-    margin-top:-9%;
-    width: 10%;
-    text-align: center;
-    transition: all 0.5s;
-    padding: 1em 1em;
-    background-color: whitesmoke;
-    border-color:white;
-    border-style: solid;
+    align-items: center;
+    display:block;
+    border: none;
 }
 body{
     background: url("") repeat;
@@ -137,15 +62,26 @@ body{
 
 p{
     color: brown;
+    text-align: center;
 }
-
+button{
+        background-color:whitesmoke;
+        border: 1px solid whitesmoke;
+        box-shadow: 0 0.5em 0.5em -0.4em brown;
+        color:grey;
+        cursor:pointer;
+        padding: 1em;
+        /*border-radius: 30%;
+        margin-left:300px;*/
+}
 button:hover {
     background-color:whitesmoke;
-    border-color: brown;
+    border: 1px solid whitesmoke;
     box-shadow: 0 0.5em 0.5em -0.4em brown;
     color:grey;
     cursor:pointer;
-    transform: translateY(-0.5em);
+    transform: translateY(-0.3em);
+    padding: 1em;
     /*border-radius: 30%;
     margin-left:300px;*/
 }
@@ -158,6 +94,7 @@ section button{
     top:150px;
     left:200px;
     width: 100px;
+    padding: 1em;
 }
 #sign{
     position:static;
@@ -186,29 +123,147 @@ td{
 a.a1 a.a2 a.a3 {
     color: green;
   }
-  
+  .git:visited{
+    color:rgb(143, 74, 233);
+  }
+  .home:visited{
+    color:rgb(143, 74, 233);
+  }
+  .gal:visited{
+    color:rgb(143, 74, 233);
+  }
+  .write:visited{
+    color:rgb(143, 74, 233);
+  }
+  .card:visited{
+    color:rgb(143, 74, 233);
+  }
   /* visited link */
   a:visited {
-    color: gray;
+    color: black;
   }
-  
+  .git{
+    color:gray;
+    text-decoration: none;
+  }
+  .home{
+    color:gray;
+    text-decoration: none;
+  }
+  .gal{
+    color:gray;
+    text-decoration: none;
+  }
+  .write{
+    color:gray;
+    text-decoration: none;
+  }
+  .card{
+    color:gray;
+    text-decoration: none;
+  }
+  a:hover{
+    color: red;
+  }
+  a{
+    color:rgb(185, 152, 157);
+  }
   /* mouse over link */
-  a:hover {
+  .write:hover {
     color: hotpink;
-    font-size: 15px;
+    font-size: 18px;
   }
-  
+  .gal:hover {
+    color: hotpink;
+    font-size: 18px;
+  }
+  .home:hover {
+    color: hotpink;
+    font-size: 18px;
+  }
+  .git:hover {
+    color: hotpink;
+    font-size: 18px;
+  }
+  .card:hover {
+    color: hotpink;
+    font-size: 18px;
+  }
   /* selected link */
-  a:active {
-    color: blue;
-  }
-  
+
   img {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-top: -3%;
+    margin-top: -1%;
     border-radius: 5%;
   }
 
- 
+  nav{
+    display:flex;
+    justify-content:space-between;
+}
+ul {
+    flex: 1;
+    max-width:50%;
+    display:flex;
+    justify-content:space-between;
+    color:white;
+}
+ul,li{
+    display:flex;
+    margin:0;
+    padding:0;
+    justify-content:space-between;
+}
+@media (max-width: 768px) {
+    h1{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    nav, nav ul{
+        flex-direction:column;
+        align-items: center;
+        
+    }
+}
+@media (max-width: 768px) {
+   h1, img{
+        width: 250px;
+        height:150px;
+        align-items: center;
+        display:block;
+    }
+}
+@media (max-width: 768px) {
+    .b1{
+         font-size:12px;
+         margin: auto;
+         text-align: center;
+         transition: all 0.5s;
+         flex-direction: column;
+         align-items: center;
+     }
+ }
+ @media (max-width: 768px) {
+    .b2{
+         flex-direction: column;
+         align-items: center;
+         font-size:12px;
+         margin: auto;
+         text-align: center;
+         transition: all 0.5s;
+     }
+ }
+ @media (max-width: 768px) {
+    .b3{
+         font-size:12px;
+         margin: auto;
+         text-align: center;
+         transition: all 0.5s;
+         flex-direction: column;
+         align-items: center;
+     }
+ }
