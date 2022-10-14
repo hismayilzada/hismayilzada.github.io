@@ -32,5 +32,73 @@
     margin-left:2%;
     height:100%;
   }
-  
-  
+  a.home{
+    color:red;
+    text-decoration:none;
+  }
+  a.write{
+    color:white;
+    text-decoration:none;
+  }
+  a.personal{
+    color:rgb(214, 194, 140);
+    text-decoration:none;
+  }
+  a.card{
+    color: gray;
+    text-decoration:none;
+  }
+  a.git{
+    color:rgb(70, 212, 255);
+    text-decoration:none;
+  }
+  a.home:hover{
+    font-weight: bold;
+    text-decoration:underline;
+  }
+  a.write:hover{
+    font-style:italic;
+    text-decoration:wavy;
+  }
+  a.personal:hover{
+    font-style:oblique;
+    text-decoration:wavy;
+  }
+  a.card:hover{
+    font-style:italic;
+    text-decoration:wavy;
+  }
+  a.git:hover{
+    font-weight: bold;
+    text-decoration:underline;
+  }
+nav{
+    display:flex;
+    justify-content:center;
+}
+ul {
+    flex: 1;
+    max-width:50%;
+    display:flex;
+    justify-content:center;
+    color:white;
+}
+ul,li{
+    display:flex;
+    margin:0;
+    padding:0;
+    justify-content:center;
+}
+@media (max-width: 768px) {
+    h1{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    nav, nav ul{
+        flex-direction:column;
+        align-items: center;
+        
+    }
+}
