@@ -201,20 +201,19 @@ a.a1 a.a2 a.a3 {
 
   nav{
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
 }
 ul {
     flex: 1;
     max-width:50%;
     display:flex;
-    justify-content:space-between;
-    color:white;
+    justify-content:center;
 }
 ul,li{
     display:flex;
     margin:0;
     padding:0;
-    justify-content:space-between;
+    justify-content:center;
 }
 @media (max-width: 768px) {
     h1{
