@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
     background: black;
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+  
 }
 #i1 {
     float: left;
@@ -32,73 +37,96 @@
     margin-left:2%;
     height:100%;
   }
-  a.home{
-    color:red;
-    text-decoration:none;
-  }
-  a.write{
-    color:white;
-    text-decoration:none;
-  }
-  a.personal{
-    color:rgb(214, 194, 140);
-    text-decoration:none;
-  }
-  a.card{
-    color: gray;
-    text-decoration:none;
-  }
-  a.git{
-    color:rgb(70, 212, 255);
-    text-decoration:none;
-  }
-  a.home:hover{
-    font-weight: bold;
-    text-decoration:underline;
-  }
-  a.write:hover{
-    font-style:italic;
-    text-decoration:wavy;
-  }
-  a.personal:hover{
-    font-style:oblique;
-    text-decoration:wavy;
-  }
-  a.card:hover{
-    font-style:italic;
-    text-decoration:wavy;
-  }
-  a.git:hover{
-    font-weight: bold;
-    text-decoration:underline;
-  }
-nav{
-    display:flex;
-    justify-content:center;
-}
-ul {
-    flex: 1;
-    max-width:50%;
-    display:flex;
-    justify-content:center;
-    color:white;
-}
-ul,li{
-    display:flex;
-    margin:0;
-    padding:0;
-    justify-content:center;
-}
 @media (max-width: 768px) {
     h1{
         font-size: 20px;
         text-align: center;
     }
 }
-@media (max-width: 768px) {
-    nav, nav ul{
-        flex-direction:column;
-        align-items: center;
-        
+header{
+  width: 100%;
+  height: 80px;
+  background: black;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+  opacity: 0.9;
+}
+.name{
+  font-size:30px;
+  font-weight:bold;
+  color:white;
+  margin:auto;
+  background: black;
+}
+.whole{
+  display:none;
+  background: black;
+}
+.bar ul{
+  display: flex;
+  background: black;
+}
+.bar ul li a{
+  display: block;
+  color: white;
+  font-size: 20px;
+  padding:10px 25px;
+  border-radius:50px;
+  transition: 0.3s;
+  margin: 0 5px;
+  background: black;
+}
+.bar ul li a:hover{
+  color:black;
+  background:white;
+}
+.bar ul li a:active{
+  color:black;
+  background:white;
+}
+@media only screen and (max-width: 1320px) {
+    header{
+        padding: 0 50px;
     }
+}
+@media only screen and (max-width: 1100px) {
+  header{
+      padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .whole{
+      display: block;
+      cursor:pointer;
+  }
+  .whole .line{
+    width:30px;
+    height:30px;
+    margin:6px 0;
+    background-color:white;
+  }
+  .bar{
+    position:absolute;
+    width: 100vw;
+    top:80px;
+    transition: 0.2s;
+    overflow: hidden;
+    left:0;
+    right:0;
+    height:0;
+
+  }
+  .bar ul{
+    display: block;
+    width:fit-content;
+    text-align:center;
+    opacity:0;
+    margin:80px auto 0 auto;
+    transition: 0.5s;
+  }
+  .bar ul li a{
+    margin-bottom: 15px;
+  }
 }
