@@ -2,42 +2,66 @@
 <html>
     <head>
     <title>Write me a message</title>
-      <link rel="stylesheet" href="personal.css">
-      <link rel ="icon" href="C:/Users/dellc/Downloads/favicon.ico">
+      <link rel="stylesheet" href="submit.css">
+      <link rel ="icon" href="favicon.ico">
 </head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <body>
-    <table border="1">
-    <caption>INFORMATION</caption>
-    <tr>
-        <th>Name</th>
-        <th>Surname</th>
-        <th>Contact Information</th>
-    </tr>
-    <tr>
-        <td>Humay</td>
-        <td>Ismayilzada</td>
-        <td><a href="mailto:hismayilzada12387@ada.edu.az">hismayilzada12387@ada.edu.az</a></td>
-    </tr>
-</table>
+        <header>
+        <div class="name">Humay Ismayilzada</div>
+        <div class="whole">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="bar">
+            <ul>
+                <li>
+                    <a href="welcome.html" class="home">Home</a>
+                </li>
+                <li>
+                    <a href="personal.html" class="write">Personal Webpage</a>
+                </li>
+                <li>
+                    <a href="gallery.html" class="gal">Gallery</a>
+                </li>
+                <li>
+                    <a href="digital.html" class="card" target="blank">Digital Card</a>
+                </li>
+                <li>
+                    <a href="https://github.com/hismayilzada/hismayilzada.github.io" class="git" target="blank">Github</a>
+                </li>
+            </ul>
+        </nav>
+        </header>
+        </body>
+        <table border="1">
+            <caption>INFORMATION</caption>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Contact Information</th>
+            </tr>
+            <tr>
+                <td>Humay</td>
+                <td>Ismayilzada</td>
+                <td><a href="mailto:hismayilzada12387@ada.edu.az" class="m" target="blank">hismayilzada12387@ada.edu.az</a></td>
+            </tr>
+        </table>
+        <form action="https://formspree.io/f/xzbwvnzp"method="POST">
+        <div class="contain">
+            <div class="box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2>Write Me a Message</h2>
+                    <input class="att" type="text" name="subject" placeholder="subject" required=""> <br>
+                    <input class="att" type="email" name="_replyto" name="mail" placeholder="email" required=""><br>
+                    <textarea class="att area" type="message" name="message" placeholder="message" required=""></textarea>
+                    <button class="button" type="submit" value="Send">Send</button>
+                </div>
+            </div>
+        </div>
+        </form>
+
 <br>
-
-
-<form action="mailto: hismayilzada12387@ada.edu.az" method="POST">
-<fieldset>
-    <legend>SEND ME A MESSAGE
-    </legend><label for="subject">Subject:</label> <br>
-<input type="text" name="subject" placeholder="subject" required=""> <br>
-<label for="mail">Email:</label> <br>
-<input type="email" name="mail" placeholder="email" required="">
-<br>
-<label for="message">Message:</label> <br>
-<input type="message" name="message" placeholder="message" required="">
-<br>
-<button>Urek Sozlerini gonder!</button>
-</fieldset>
-
-</form>
-
-    </body>
 </html>
