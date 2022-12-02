@@ -1,10 +1,11 @@
-// const form = document.querySelector(".top-banner form");
-// const input = document.querySelector(".top-banner input");
-// const msg = document.querySelector(".top-banner .msg");
-// const list = document.querySelector(".ajax-section .cities");
-// const apiKey = "588e1ae2385a42dd118e623f56b15fd6";
-
-
+const wrapper = document.querySelector(".wrapper"),
+inputPart = document.querySelector(".input-part"),
+infoTxt = inputPart.querySelector(".info-txt"),
+inputField = inputPart.querySelector("input"),
+locationBtn = inputPart.querySelector("button"),
+weatherPart = wrapper.querySelector(".weather-part"),
+wIcon = weatherPart.querySelector("img"),
+arrowBack = wrapper.querySelector("header i");
 const x = document.getElementById("demo");
 
 function getLocation() {
@@ -20,80 +21,83 @@ function showPosition(position) {
   "<br>Longitude: " + position.coords.longitude;
 }
 
-// function showError(error) {
-//   switch(error.code) {
-//     case error.PERMISSION_DENIED:
-//       x.innerHTML = "User denied the request for Geolocation."
-//       break;
-//     case error.POSITION_UNAVAILABLE:
-//       x.innerHTML = "Location information is unavailable."
-//       break;
-//     case error.TIMEOUT:
-//       x.innerHTML = "The request to get user location timed out."
-//       break;
-//     case error.UNKNOWN_ERROR:
-//       x.innerHTML = "An unknown error occurred."
-//       break;
-//   }
-// }
-// form.addEventListener("submit", e => {
-//   e.preventDefault();
-//   const listItems = list.querySelectorAll(".ajax-section .city");
-//   const inputVal = input.value;
+let api;
 
-//   //ajax here
-//   const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric`;
-//   const u=`https://restcountries.com/v3.1/alpha/{code}`;
-//   fetch(url)
-//     .then(response => response.json())
-//     .then(data => {
-//       const { main, name, sys, weather } = data;
-//       const icon = `https://openweathermap.org/img/wn/${
-//         weather[0]["icon"]
-//       }@2x.png`;
+inputField.addEventListener("keyup", e =>{
+    if(e.key == "Enter" && inputField.value != ""){
+        requestApi(inputField.value);
+    }
+});
 
-//       const li = document.createElement("li");
-//       li.classList.add("city");
-//       const markup = `
-//         <h2 class="city-name" data-name="${name},${sys.country}">
-//           <span>${name}</span>
-//           <sup>${sys.country}</sup>
-//         </h2>
-//         <div class="city-temp">${Math.round(main.temp)}<sup>°C</sup></div>
-//         <figure>
-//           <img class="city-icon" src=${icon} alt=${weather[0]["main"]}>
-//           <figcaption>${weather[0]["description"]}</figcaption>
-//         </figure>
-//       `;
-//       li.innerHTML = markup;
-//       list.appendChild(li);
-//     })
+locationBtn.addEventListener("click", () =>{
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+    }else{
+        alert("Your browser does not support geolocation api");
+    }
+});
 
-//     fetch(u)
-//     .then(response => response.json())
-//     .then(data => {
-//       const { main, name, sys, weather } = data;
-//       const icon = `https://openweathermap.org/img/wn/${
-//         weather[0]["icon"]
-//       }@2x.png`;
+function requestApi(city){
+    api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=588e1ae2385a42dd118e623f56b15fd6`;
+    fetchData();
+}
 
-//       const li = document.createElement("li");
-//       li.classList.add("city");
-//       const markup = `
-//         <h2 class="city-name" data-name="${name},${sys.country}">
-//           <span>${name}</span>
-//           <sup>${sys.country}</sup>
-//         </h2>
-//         <div class="city-temp">${Math.round(main.temp)}<sup>°C</sup></div>
-//         <figure>
-//           <img class="city-icon" src=${icon} alt=${weather[0]["main"]}>
-//           <figcaption>${weather[0]["description"]}</figcaption>
-//         </figure>
-//       `;
-//       li.innerHTML = markup;
-//       list.appendChild(li);
-//     })
-//   msg.textContent = "";
-//   form.reset();
-//   input.focus();
-// });
+function onSuccess(position){
+    const {latitude, longitude} = position.coords;
+    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=588e1ae2385a42dd118e623f56b15fd6`;
+    fetchData();
+}
+
+function onError(error){
+    infoTxt.innerText = error.message;
+    infoTxt.classList.add("error");
+}
+
+function fetchData(){
+    infoTxt.innerText = "keep Calm...";
+    infoTxt.classList.add("loading");
+    fetch(api).then(res => res.json()).then(result => weatherDetails(result)).catch(() =>{
+        infoTxt.innerText = "Something went wrong";
+        infoTxt.classList.replace("loading", "error");
+    });
+}
+
+function weatherDetails(info){
+    if(info.cod == "404"){
+        infoTxt.classList.replace("pending", "error");
+        infoTxt.innerText = `${inputField.value} isn't a valid city name`;
+    }else{
+        const city = info.name;
+        const country = info.sys.country;
+        const {description, id} = info.weather[0];
+        const {temp, feels_like, humidity} = info.main;
+
+        if(id == 800){
+            wIcon.src = "icons/clear.svg";
+        }else if(id >= 200 && id <= 232){
+            wIcon.src = "icons/storm.svg";  
+        }else if(id >= 600 && id <= 622){
+            wIcon.src = "icons/snow.svg";
+        }else if(id >= 701 && id <= 781){
+            wIcon.src = "icons/haze.svg";
+        }else if(id >= 801 && id <= 804){
+            wIcon.src = "icons/cloud.svg";
+        }else if((id >= 500 && id <= 531) || (id >= 300 && id <= 321)){
+            wIcon.src = "icons/rain.svg";
+        }
+        
+        weatherPart.querySelector(".temp .numb").innerText = Math.floor(temp);
+        weatherPart.querySelector(".weather").innerText = description;
+        weatherPart.querySelector(".location span").innerText = `${city}, ${country}`;
+        weatherPart.querySelector(".temp .numb-2").innerText = Math.floor(feels_like);
+        weatherPart.querySelector(".humidity span").innerText = `${humidity}%`;
+        infoTxt.classList.remove("pending", "error");
+        infoTxt.innerText = "";
+        inputField.value = "";
+        wrapper.classList.add("active");
+    }
+}
+
+arrowBack.addEventListener("click", ()=>{
+    wrapper.classList.remove("active");
+});
