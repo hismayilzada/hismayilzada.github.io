@@ -1,60 +1,68 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="weather.css">
-</head>
-<body>
-<section class="top-banner">
-  <div class="container">
-    <h1 class="heading">Weather App</h1>
-    <form>
-      <input type="text" placeholder="Enter a city name:" autofocus>
-      <button onclick="getLocation()">Try It</button>
-      <p id="demo"></p>
-      <button type="submit">SUBMIT</button>
-      <span class="msg"></span>
-    </form>
-  </div>
-</section>
-<section class="ajax-section">
-  <div class="container">
-    <ul class="cities"></ul>
-  </div>
-</section>
-<script src="weather.js"></script>
-</body>
-<footer class="page-footer">
-  <div class="container">
-    </small>
-  </div>
-</footer>
-</html> -->
-
 <!DOCTYPE html>
 <body>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="weather.css">
-  <link rel ="icon" href="favicon.ico">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather</title>
-</head>
-</body>
-  <div class="contain">
-    <div class="box">
-        <div class="right">
-            <h1>WEATHER FORECAST☁️</h1> <br><br>
-            <h3>Please Enter a Valid City Name</h3> <br>
-            <input class="input" type="text" placeholder="Enter the name of city"> <br> 
-            <button type="submit" class="submit">SUBMIT</button> <br>
-            <br> <p>-- or --</p> <br>
-            <button onclick="getLocation()" class="auto">Find Automatically</button>
-            <br><p id="demo"></p>
-        </div>
+  <head>
+    <link rel="stylesheet" href="weather.css">
+    <link rel ="icon" href="weather.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  </body>
+    <div class="wrapper">
+      <header><i class='bx bx-left-arrow-alt'></i></header>
+      <div class="box">
+            <div class="right">
+              <h1>WEATHER FORECAST☁️</h1> <br><br>
+              <section class="input-part">
+                <p class="info-txt"></p>
+                <div class="content">
+                  <h3>Please Enter a Valid City Name</h3> <br>
+                  <input class="input" type="text" placeholder="Enter the name of city"> <br> 
+                  <div class="separator"></div>
+                  <button type="submit" class="submit">SUBMIT</button> <br>
+                  <br> <p>-- or --</p> <br>
+                  <button onclick="getLocation()" class="auto">Find Automatically</button>
+                  <br><p id="demo"></p>
+                </div>
+              </section>
+              <section class="weather-part">
+                <img src="" alt="Weather Icon">
+                <div class="temp">
+                  <span class="numb">_</span>
+                  <span class="deg">°</span>C
+                </div>
+                <div class="weather">_ _</div>
+                <div class="location">
+                  <i class='bx bx-map'></i>
+                  <span>_, _</span>
+                </div>
+                <div class="bottom-details">
+                  <div class="column feels">
+                    <i class='bx bxs-thermometer'></i>
+                    <div class="details">
+                      <div class="temp">
+                        <span class="numb-2">_</span>
+                        <span class="deg">°</span>C
+                      </div>
+                      <p>Feels like</p>
+                    </div>
+                  </div>
+                  <div class="column humidity">
+                    <i class='bx bxs-droplet-half'></i>
+                    <div class="details">
+                      <span>_</span>
+                      <p>Humidity</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+      </div>
     </div>
-  </div>
-  <script src="weather.js"></script>
+    <script src="weather.js"></script>
+  </body>
 
 </html>
