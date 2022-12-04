@@ -38,7 +38,7 @@ a.c{
     border-radius: 60px;
     padding: 20px;
     position: absolute;
-    left: 430px;
+    left: 270px;
     bottom:300px;
     color:rgba(255, 255, 255, 0.801);
     font-weight:bold;
@@ -59,7 +59,7 @@ a.d{
     border-radius: 60px;
     padding: 20px;
     position: absolute;
-    right: 400px;
+    right: 580px;
     bottom:300px;
     color:rgba(255, 255, 255, 0.801);
     font-weight:bold;
@@ -71,6 +71,28 @@ a.d{
    
 }
 a.d:hover{
+    background-color: black;
+    color:white;
+}
+a.e{
+    text-align:center;
+    background: rgba(255, 255, 255, 0.2);
+    align-items:center;
+    border-radius: 60px;
+    padding: 20px;
+    position: absolute;
+    right: 300px;
+    bottom:300px;
+    color:rgba(255, 255, 255, 0.801);
+    font-weight:bold;
+    text-decoration: none;
+    border: black solid 2px;
+    text-shadow: 1.5px 1.5px black;
+    display: inline-block;
+    width:180px;
+   
+}
+a.e:hover{
     background-color: black;
     color:white;
 }
