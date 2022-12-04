@@ -11,21 +11,53 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   </head>
   </body>
+  <div class="headd">
+    <div class="name">Humay Ismayilzada&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="whole">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="bar">
+        <ul>
+            <li>
+                <a href="welcome.html" class="home">Home</a>
+            </li>
+            <li>
+                <a href="personal.html" class="write">Personal Webpage</a>
+            </li>
+            <li>
+                <a href="submit.html" class="gal">Write me a Message</a>
+            </li>
+            <li>
+                <a href="digital.html" class="card" target="blank">Digital Card</a>
+            </li>
+            <li>
+                <a href="gallery.html" class="gal" target="blank">Gallery</a>
+            </li>
+            <li>
+                <a href="https://github.com/hismayilzada/hismayilzada.github.io" class="git" target="blank">Github</a>
+            </li>
+        </ul>
+    </nav>
+  </div>
     <div class="wrapper">
       <header><i class='bx bx-left-arrow-alt'></i></header>
       <div class="box">
             <div class="right">
-              <h1>WEATHER FORECAST☁️</h1> <br><br>
+              <h1>WEATHER APP☁️</h1> <br>
               <section class="input-part">
                 <p class="info-txt"></p>
                 <div class="content">
-                  <h3>Please Enter a Valid City Name</h3> <br>
-                  <input class="input" type="text" placeholder="Enter the name of city"> <br> 
+                  <h3>3 Options To Find Weather Forecast</h3> <br>
+                  <input class="input" type="text" placeholder="Write city name & press ENTER"> <br> 
                   <div class="separator"></div>
-                  <button type="submit" class="submit">SUBMIT</button> <br>
-                  <br> <p>-- or --</p> <br>
-                  <button onclick="getLocation()" class="auto">Find Automatically</button>
-<!--                   <br><p id="demo"></p> -->
+                  <input class="latitude" type="text" placeholder="Write Latitude & press ENTER"> <br> 
+                  <div class="separator"></div>
+                  <input class="longitude" type="text" placeholder="Write Longitude & press ENTER"> <br> 
+                  <button type="submit" class="submit"></button> 
+                  <button class="auto">Find Automatically</button>
+                  <!-- <br><p id="demo"></p> -->
                 </div>
               </section>
               <section class="weather-part">
@@ -43,34 +75,48 @@
                 <br><p>Time: <span id="time"></span></p>
                 <div class="bottom-details">
                   <div class="column feels">
-                    <i class='bx bxs-thermometer'></i>
+                    <i class='bx bxs-thermometer'  style="color:rgb(0, 217, 255)"></i>
                     <div class="details">
                       <div class="temp">
                         <span class="numb-2">_</span>
                         <span class="deg">°</span>C
                       </div>
-                      <p>Temperature&nbsp;&nbsp;&nbsp;</p>
+                      <p><br>Feels Like&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="column min">
+                    <i class='bx bx-minus'  style="color:rgb(117, 181, 255);"></i>
+                    <div class="details">
+                      <span>_</span>
+                      <p>&nbsp;&nbsp;&nbsp;<br>Min Temp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="column max">
+                    <i class='bx bx-droplet'  style="color:rgb(116, 0, 0);"></i>
+                    <div class="details">
+                      <span>_</span>
+                      <p><br>Max Temp&nbsp;&nbsp;&nbsp;</p>
                     </div>
                   </div>
                   <div class="column humidity">
-                    <i class='bx bxs-droplet-half'></i>
+                    <i class='bx bxs-droplet-half'  style="color:blue;"></i>
                     <div class="details">
                       <span>_</span>
-                      <p>Humidity&nbsp;&nbsp;&nbsp;</p>
+                      <p><br>Humidity&nbsp;&nbsp;&nbsp;</p>
                     </div>
                   </div>
                   <div class="column pressure">
-                    <i class='bx bxs-droplet-half'></i>
+                    <i class='bx bxs-watch' style="color:red;"></i>
                     <div class="details">
                       <span>_</span>
-                      <p>Pressure&nbsp;&nbsp;&nbsp;</p>
+                      <p><br>Pressure&nbsp;&nbsp;&nbsp;</p>
                     </div>
                   </div>
                   <div class="column wind">
-                    <i class='bx bxs-droplet-half'></i>
+                    <i class='bx bx-wind'  style="color:gray;"></i>
                     <div class="details">
                       <span>_</span>
-                      <p>Wind</p>
+                      <p><br>Wind</p>
                     </div>
                   </div>
                 </div>
