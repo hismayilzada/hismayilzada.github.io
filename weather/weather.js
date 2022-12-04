@@ -56,16 +56,6 @@ locationBtn.addEventListener("click", () =>{
         alert("Your browser does not support geolocation api");
     }
 });
-latitude.addEventListener("keyup", e =>{
-    if(e.key == "Enter" && latitude.value != ""){
-        requestApi(latitude.value);
-    }
-});
-longitude.addEventListener("keyup", e =>{
-    if(e.key == "Enter" && longitude.value != ""){
-        requestApi(longitude.value);
-    }
-});
 function requestApi(city){
     api=`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=588e1ae2385a42dd118e623f56b15fd6`
     fetchData();
@@ -136,6 +126,7 @@ function weatherDetails(info){
         infoTxt.innerText = "";
         inputField.value = "";
         wrapper.classList.add("active");
+
     }
 }
 function getDirection(angle) {
